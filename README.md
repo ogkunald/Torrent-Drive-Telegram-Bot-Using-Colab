@@ -8,16 +8,15 @@ Telegram bot to stream torrent files to Google Drive using Google Colab.
 1. To get a token, send BotFather a message that says <code>/newbot</code> and paste token into **config.cfg** file.
 2. When asked for a name and username  for your new bot choose username such as something that ends with the word <code>_bot</code>. For example <code>drivebottyl3r_bot</code>
 3. If your chosen name is available, BotFather will send you a token
-4. Save the token
-5. To set Description for your bot in BotFather do the following:
+4. To set Description for your bot in BotFather do the following:
     - Send <code>/setdescription</code> to BotFather
     - Select the bot for which you are writing a Description
     - Change the description and send it to BotFather 
-6. Ok now you're ready to go.
-7. Create new folder in google drive and copy all the files from folder **Telegram_bot** to the newly created folder
-8. Open<a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true"/></a> and upload **GDriveuploader.ipynb** file or  Click the badge which says **Open in Colab**
-9. Run the whole notebook (**Runtime > Run all**)
-10.Follow directions there.
+5. Ok now you're ready to go.
+6. Create new folder in google drive and copy all the files from folder **Telegram_bot** to the newly created folder
+7. Open<a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true"/></a> and upload **GDriveuploader.ipynb** file or  Click the badge which says **Open in Colab**
+8. Run the whole notebook (**Runtime > Run all**)
+9. Follow directions there.
 
 After download finishes the downloaded files will be in there in your drive in a folder named "**Experiment**"
 
