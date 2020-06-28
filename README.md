@@ -29,7 +29,7 @@ After download finishes the downloaded files will be in there in your drive in a
 
 ### What is the purpose of it?
 1. Since it is a Telegram bot ,you can access it from anywhere ,it will neither use your data or space.
-2. Because of the Google Servers high download and upload speed ,you can download torrents fast.
+2. Because of the Google Servers high download and upload speed ,you can stream torrents fast.
 3. You can download torrent upto 75 gb without any problem.
 
 # Screenshots
