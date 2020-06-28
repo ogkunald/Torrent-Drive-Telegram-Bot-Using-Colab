@@ -38,7 +38,7 @@ After download finishes the downloaded files will be in there in your drive in a
 
 ### TODO
 1. Concurrent torrent download
-2. Send progressbar of download as telegram message.
+2. Progressbar of the download.
 3. Cancel current download
 
 # This whole repo is against Google Colab policy and you shouldn't be using it.
