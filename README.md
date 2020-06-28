@@ -31,7 +31,7 @@ After download finishes the downloaded files will be in there in your drive in a
 2. Because of the Google Servers high download and upload speed ,you can download torrents fast.
 3. You can download torrent upto 75 gb without any problem.
 
-###TODO
+### TODO
 1. Concurrent torrent download
 2. Send progressbar of download as telegram message.
 3. Cancel current download
