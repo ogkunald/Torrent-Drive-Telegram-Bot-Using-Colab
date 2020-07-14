@@ -20,7 +20,7 @@ Telegram bot to stream torrent files to Google Drive using Google Colab.
 
 After download finishes the downloaded files will be in there in your drive in a folder named "**Experiment**"
 
-# Dependencies:
+### Dependencies:
 1. requests
 2. lxml
 3. beautifulsoup4
