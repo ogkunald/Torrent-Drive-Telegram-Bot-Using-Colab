@@ -3,6 +3,11 @@ Telegram bot to stream torrent files to Google Drive using Google Colab.
 
 <a href="https://colab.research.google.com/github/spireon-ex10/Torrent-To-Google-Drive-Downloader/blob/master/Torrent_To_Google_Drive_Downloader_v2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+### What is the purpose of it?
+1. Since it is a Telegram bot ,you can access it from anywhere ,it will neither use your data or space.
+2. Because of the Google Servers high download and upload speed ,you can stream torrents fast.
+3. You can download torrent upto 75 gb without any problem.
+
 ### Tutorial
 1. Contact @BotFather in your Telegram messenger to create new telegram bot
 1. To get a token, send BotFather a message that says <code>/newbot</code> and paste token into **config.cfg** file.
@@ -26,10 +31,6 @@ After download finishes the downloaded files will be in there in your drive in a
 3. beautifulsoup4
 4. https://www.libtorrent.org/
 
-### What is the purpose of it?
-1. Since it is a Telegram bot ,you can access it from anywhere ,it will neither use your data or space.
-2. Because of the Google Servers high download and upload speed ,you can stream torrents fast.
-3. You can download torrent upto 75 gb without any problem.
 
 # Screenshots
 ![TELEGRAMSS](https://github.com/nastyzera/Torrent-Drive-Telegram-Bot-Using-Colab/raw/master/Screenshots/TelegramBotScreenshot.jpeg)
