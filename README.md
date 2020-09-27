@@ -1,7 +1,6 @@
 # Torrent To Google Drive Telegram Bot
 Telegram bot to stream torrent files to Google Drive using Google Colab.
 
-[![HitCount](http://hits.dwyl.com/nastyzera/nastyzera/Torrent-Drive-Telegram-Bot-Using-Colab.svg)](http://hits.dwyl.com/nastyzera/nastyzera/Torrent-Drive-Telegram-Bot-Using-Colab)
 
 <a href="https://colab.research.google.com/github/spireon-ex10/Torrent-To-Google-Drive-Downloader/blob/master/Torrent_To_Google_Drive_Downloader_v2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
