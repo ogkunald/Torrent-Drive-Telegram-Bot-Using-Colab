@@ -3,6 +3,7 @@ import re
 import libtorrent as lt
 import time
 import datetime
+import traceback
 
 ses = lt.session()
 ses.listen_on(6881, 6891)
@@ -64,6 +65,11 @@ while True:
                 message = str(item["message"]["text"])
             except:
                 message = None
-            from_ = item["message"]["from"]["id"]
-            reply = make_reply(message)
-            bot.send_message(reply, from_)
+            
+            try:
+                from_ = item["message"]["from"]["id"]
+                reply = make_reply(message)
+                bot.send_message(reply, from_)
+            except e:
+                traceback.print_exc()
+                bot.send_message("error occurred", from_)
