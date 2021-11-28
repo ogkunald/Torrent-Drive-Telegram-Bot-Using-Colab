@@ -70,6 +70,6 @@ while True:
                 from_ = item["message"]["from"]["id"]
                 reply = make_reply(message)
                 bot.send_message(reply, from_)
-            except e:
+            except UnboundLocalError as e:
                 traceback.print_exc()
                 bot.send_message("error occurred", from_)
