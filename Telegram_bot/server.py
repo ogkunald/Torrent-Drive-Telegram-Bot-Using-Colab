@@ -17,7 +17,7 @@ params = {
 
 
 bot = telegram_chatbot("config.cfg")
-pattern='magnet:\?xt=urn:btih:[a-zA-Z0-9:.=]*'
+pattern='magnet:\?xt=urn:btih:.*'
 def make_reply(msg):
     msg = requests.utils.unquote(msg).replace('\n', '') # idk if python does it by itself
     result=re.match(pattern,msg)
