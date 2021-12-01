@@ -4,6 +4,7 @@ import libtorrent as lt
 import time
 import datetime
 import traceback
+import requests # idk what better
 
 ses = lt.session()
 ses.listen_on(6881, 6891)
@@ -16,8 +17,9 @@ params = {
 
 
 bot = telegram_chatbot("config.cfg")
-pattern='magnet:\?xt=urn:btih:[a-zA-Z0-9]*'
+pattern='magnet:\?xt=urn:btih:[a-zA-Z0-9:.=]*'
 def make_reply(msg):
+    msg = requests.utils.unquote(msg).replace('\n', '') # idk if python does it by itself
     result=re.match(pattern,msg)
     if result:
         print(msg)
@@ -51,7 +53,8 @@ def make_reply(msg):
 
         print(datetime.datetime.now())
         reply='Download Finished You can find downloaded file @ https://drive.google.com/drive/folders/1OXqhU4UX0e_eEcQME6ZG_GFB03ioknjb?usp=sharing'
-
+    else:
+        reply='Oops! Match failed'
     return reply
 
 update_id = None
@@ -65,11 +68,7 @@ while True:
                 message = str(item["message"]["text"])
             except:
                 message = None
-            
-            try:
-                from_ = item["message"]["from"]["id"]
-                reply = make_reply(message)
-                bot.send_message(reply, from_)
-            except UnboundLocalError as e:
-                traceback.print_exc()
-                bot.send_message("error occurred", from_)
+
+            from_ = item["message"]["from"]["id"]
+            reply = make_reply(message)
+            bot.send_message(reply, from_)
